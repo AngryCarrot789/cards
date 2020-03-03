@@ -5,8 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:cardsArefun.Cards"
              mc:Ignorable="d" 
-             d:DesignHeight="250" d:DesignWidth="175">
+             Height="275" Width="175">
     <Grid>
-            
+        <Image Source="{Binding ImageSource, UpdateSourceTrigger=PropertyChanged}" Height="250" VerticalAlignment="Top"/>
+        <Label Content="{Binding CardName, UpdateSourceTrigger=PropertyChanged}" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"/>
+
     </Grid>
 </UserControl>

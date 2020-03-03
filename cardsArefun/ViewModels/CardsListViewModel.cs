@@ -18,6 +18,24 @@ namespace cardsArefun.ViewModels
             set => RaisePropertyChanged(ref _cardsList, value);
         }
 
+        private CardListItem _selectedCard;
+        public CardListItem SelectedCard
+        {
+            get => _selectedCard;
+            set
+            {
+                RaisePropertyChanged(ref _selectedCard, value);
+                SelectedCardViewModel = value.DataContext as CardItemViewModel;
+            }
+        }
+
+        private CardItemViewModel _selectedCardVM;
+        public CardItemViewModel SelectedCardViewModel
+        {
+            get => _selectedCardVM;
+            set => RaisePropertyChanged(ref _selectedCardVM, value);
+        }
+
         private int _selectedIndex;
         public int SelectedIndex
         {
@@ -30,7 +48,7 @@ namespace cardsArefun.ViewModels
             CardsList.Add(cli);
         }
 
-        public CardListItem CreateCard(string imageSource, string cardName)
+        public static CardListItem CreateCard(string imageSource, string cardName)
         {
             CardItemViewModel civm = new CardItemViewModel();
             CardListItem cli = new CardListItem();

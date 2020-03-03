@@ -117,7 +117,64 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\AHearts.png" />
+    <Resource Include="Resources\10C.png" />
+    <Resource Include="Resources\10D.png" />
+    <Resource Include="Resources\10H.png" />
+    <Resource Include="Resources\10S.png" />
+    <Resource Include="Resources\2C.png" />
+    <Resource Include="Resources\2D.png" />
+    <Resource Include="Resources\2H.png" />
+    <Resource Include="Resources\2S.png" />
+    <Resource Include="Resources\3C.png" />
+    <Resource Include="Resources\3D.png" />
+    <Resource Include="Resources\3H.png" />
+    <Resource Include="Resources\3S.png" />
+    <Resource Include="Resources\4C.png" />
+    <Resource Include="Resources\4D.png" />
+    <Resource Include="Resources\4H.png" />
+    <Resource Include="Resources\4S.png" />
+    <Resource Include="Resources\5C.png" />
+    <Resource Include="Resources\5D.png" />
+    <Resource Include="Resources\5H.png" />
+    <Resource Include="Resources\5S.png" />
+    <Resource Include="Resources\6C.png" />
+    <Resource Include="Resources\6D.png" />
+    <Resource Include="Resources\6H.png" />
+    <Resource Include="Resources\6S.png" />
+    <Resource Include="Resources\7C.png" />
+    <Resource Include="Resources\7D.png" />
+    <Resource Include="Resources\7H.png" />
+    <Resource Include="Resources\7S.png" />
+    <Resource Include="Resources\8C.png" />
+    <Resource Include="Resources\8D.png" />
+    <Resource Include="Resources\8H.png" />
+    <Resource Include="Resources\8S.png" />
+    <Resource Include="Resources\9C.png" />
+    <Resource Include="Resources\9D.png" />
+    <Resource Include="Resources\9H.png" />
+    <Resource Include="Resources\9S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AC.png" />
+    <Resource Include="Resources\AD.png" />
+    <Resource Include="Resources\AH.png" />
+    <Resource Include="Resources\AS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\JC.png" />
+    <Resource Include="Resources\JD.png" />
+    <Resource Include="Resources\JH.png" />
+    <Resource Include="Resources\JS.png" />
+    <Resource Include="Resources\KC.png" />
+    <Resource Include="Resources\KD.png" />
+    <Resource Include="Resources\KH.png" />
+    <Resource Include="Resources\KS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\QC.png" />
+    <Resource Include="Resources\QD.png" />
+    <Resource Include="Resources\QH.png" />
+    <Resource Include="Resources\QS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

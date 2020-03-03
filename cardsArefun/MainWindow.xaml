@@ -5,18 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardsArefun"
         xmlns:cards="clr-namespace:cardsArefun.Cards"
+        xmlns:viewmodels="clr-namespace:cardsArefun.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="720" Width="1280"
         Style="{DynamicResource MainWindowStyle}">
     <Window.DataContext>
-        
+        <viewmodels:MainViewModel/>
     </Window.DataContext>
     <Grid>
-        <ListBox Height="225" Margin="10,10,10,0" VerticalAlignment="Top">
-
+        <ListBox Height="306" Margin="10,10,10,0" VerticalAlignment="Top" 
+                 ItemsSource="{Binding CardsList.CardsList, UpdateSourceTrigger=PropertyChanged}"
+                 SelectedItem="{Binding CardsList.SelectedCard, UpdateSourceTrigger=PropertyChanged}"
+                 SelectedIndex="{Binding CardsList.SelectedIndex, UpdateSourceTrigger=PropertyChanged}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel IsItemsHost="True" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
         </ListBox>
-        <Grid HorizontalAlignment="Left" Margin="10,0,0,6" Width="310" Height="443" VerticalAlignment="Bottom">
-            <cards:CardListItem/>
+        <Grid HorizontalAlignment="Left" Margin="10,0,0,6" Width="253" Height="362" VerticalAlignment="Bottom">
+            <cards:CardListItem DataContext="{Binding CardsList.SelectedCardViewModel, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
     </Grid>
 </Window>
